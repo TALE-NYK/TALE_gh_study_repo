@@ -10,18 +10,18 @@ jobs:
       with:
         path: "./tmp_repo"
     - name: Make and Move Directory
-        run: |
-            today=$(date "+%Y%m%d-%H%M%S")
-            dir_name="test_save"
-            file_name="${test_save}/hogefile_${today}.txt"
-            cd ./tmp_repo/TALE_gh_study_repo
-            branch_name="hogebranch_${today}"
-            git checkout -b $branch_name
-            mkdir $dir_name
-            touch $file_name
-            git config --user.email nayuka.tail@gmail.com
-            git config --user.name TALE-NYK
-            git add "${dir_name}/*"
-            git commit -m "GitPushTest"
-            git push --set-upstream origin $branch_name
-            echo "script end"
+      run: |
+          today=$(date "+%Y%m%d-%H%M%S")
+          dir_name="test_save"
+          file_name="${test_save}/hogefile_${today}.txt"
+          cd ./tmp_repo/TALE_gh_study_repo
+          branch_name="hogebranch_${today}"
+          git checkout -b $branch_name
+          mkdir $dir_name
+          touch $file_name
+          git config --user.email nayuka.tail@gmail.com
+          git config --user.name TALE-NYK
+          git add "${dir_name}/*"
+          git commit -m "GitPushTest"
+          git push --set-upstream origin $branch_name
+          echo "script end"
