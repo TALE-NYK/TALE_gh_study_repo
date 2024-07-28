@@ -14,7 +14,7 @@ jobs:
           today=$(date "+%Y%m%d-%H%M%S")
           dir_name="test_save"
           file_name="${test_save}/hogefile_${today}.txt"
-          cd ./tmp_repo/TALE_gh_study_repo
+          cd ./tmp_repo
           branch_name="hogebranch_${today}"
           git checkout -b $branch_name
           mkdir $dir_name
