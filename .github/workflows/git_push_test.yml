@@ -18,3 +18,4 @@ jobs:
             git add "${dir_name}/*"
             git commit -m "GitPushTest"
             git push --set-upstream origin $branch_name
+            echo "script end"
