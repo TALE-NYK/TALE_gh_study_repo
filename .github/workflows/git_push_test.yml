@@ -19,8 +19,8 @@ jobs:
           git checkout -b $branch_name
           mkdir $dir_name
           touch $file_name
-          git config --user.email nayuka.tail@gmail.com
-          git config --user.name TALE-NYK
+          git config user.email nayuka.tail@gmail.com
+          git config user.name TALE-NYK
           git add "${dir_name}/*"
           git commit -m "GitPushTest"
           git push --set-upstream origin $branch_name
