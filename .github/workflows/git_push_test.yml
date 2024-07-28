@@ -6,8 +6,7 @@ jobs:
     name: Push Test
     runs-on: ubuntu-latest
     steps:
-    - name: clone repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
         with:
           path: "./tmp_repo"
     - name: Make and Move Directory
